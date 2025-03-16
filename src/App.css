@@ -1,0 +1,83 @@
+/* Genel Stil */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e6a11f, #cfdef3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ana Container */
+.App {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* TodoCreate Container */
+.todo-create {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Input Alanı */
+.todo-create input {
+  width: 65%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.todo-create input:focus {
+  border-color: #dba21d;
+  outline: none;
+  box-shadow: 0 0 8px rgba(232, 172, 32, 0.2);
+}
+
+/* Buton */
+.todo-create button {
+  padding: 12px 20px;
+  border: none;
+  background: #e88f23;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.todo-create button:hover {
+  background: #e39517;
+  transform: translateY(-2px);
+}
+
+.todo-create button:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .App {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .todo-create input {
+    width: 100%;
+  }
+
+  .todo-create button {
+    width: 100%;
+  }
+}
